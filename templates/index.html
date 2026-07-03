@@ -1,0 +1,136 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    index
+{% endblock %}
+
+{% block main %}
+<main>
+    <h1 class="sentenceone">EVERY STEP FORWARD COUNTS</h1>
+    <h1 class="sentencetwo">REFINE YOUR JOURNY WITH </h1>
+    <h1 class="word" >ARROW ! </h1>
+
+    <p class="P1">we will help you note your goals , keep tracking your progress ,</p>
+    <p class="P2">Visualize your growth with powerful analytics , and more</p>
+    <p class="P3">waiting for you !</p>
+    <a  href="#step"    class="journey"  >Start the journey → </a>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+            <div class="error-box">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+<section id="features">
+    <h2 class="ever1">Everything you need to grow and succeed.</h2>
+    <h2 class="ever2">all in one place </h2>
+</section>
+<div>
+    <p class="tools-p">Because we care about your journey , we put a group of tools  </p>
+    <p class="tools-p2"> under your hand , use them wisely</p>
+</div>
+
+<section class="features">
+
+    <div class="card">
+        <h2 class="tit">TO-DO List</h2>
+        <div class="line-card"></div>
+        <p>Organize your daily tasks and achieve your goals.</p>
+    </div>
+
+    <div class="card">
+        <h2 class="tit">Progress Tracker</h2>
+        <div class="line-card"></div>
+        <p>Track your study sessions daily and stay focused.</p>
+    </div>
+
+    <div class="card">
+        <h2 class="tit">Progress Dashboard</h2>   
+        <div class="line-card"></div>
+        <p>Track your growth with beautiful charts and graphs.</p>
+    </div>
+    <div>
+        
+    </div>
+<div>
+    <h2 class="visualize-title">VISUALIZE YOUR</h2>
+    <h2 class="visualize-title2">PROGRESS</h2>
+    <p class="visualize-p">Turn your daily efforts into meaningful insights</p>
+    <p class="visualize-p2"> with interactive charts and analytics.</p>
+
+    <img class="graph-image"  src="{{ url_for('static', filename='graph.png') }}" alt="graph">
+
+</div>
+<div>
+    <h2 class="cardos-title">More Than Just a Productivity Tool</h2>
+    <section class="cardos" >
+        <div class="cardo">
+            <div class="icon-box">
+            <i class="fa-vellum fa-solid fa-star" style="--fa-primary-color: rgb(13, 30, 60); --fa-secondary-color: rgb(13, 30, 60);"></i>
+            </div> 
+            <h3 class="cardos-t">Easy To Use</h3>
+             <p class="cardos-p">A clean and intuitive interface designed to make task management simple and enjoyable.</p>
+        </div>
+        
+
+        <div class="cardo">
+            <div class="icon-box">
+             <i class="fa-vellum fa-solid fa-cloud" style="--fa-primary-color: rgb(13, 30, 60); --fa-secondary-color: rgb(13, 30, 60);"></i>   
+             </div>     
+             <h3 class="cardos-t">Synced</h3>
+             <p class="cardos-p">Your data is automatically saved, so you never have to worry about losing your progress.</p>
+
+        </div>
+
+        <div class="cardo">
+            <div class="icon-box">
+            <i class="fa-vellum fa-solid fa-lock" style="--fa-primary-color: rgb(13, 30, 60); --fa-secondary-color: rgb(13, 30, 60);"></i>
+            </div>
+            <h3 class="cardos-t">Privacy</h3>
+            <p class="cardos-p">Your information(progress,account...) remains private, secure, and accessible only to you.</p>
+
+        </div>
+
+        <div class="cardo">
+            <div class="icon-box">
+            <i class="fa-vellum fa-solid fa-wand-magic-sparkles" style="--fa-primary-color: rgb(13, 30, 60); --fa-secondary-color: rgb(13, 30, 60);"></i>
+            </div>
+            <h3 class="cardos-t">Modern Design</h3>
+            <p class="cardos-p">A clean and visually balanced design that creates a motivating environment for productivity.</p>
+
+        </div>
+        
+         <div class="cardo">
+            <div class="icon-box">
+             <i class="fa-vellum fa-solid fa-moon" style="--fa-primary-color: rgb(13, 30, 60); --fa-secondary-color: rgb(13, 30, 60);"></i>
+             </div>
+            <h3 class="cardos-t">Dark</h3>
+            <p class="cardos-p">Work comfortably at any time with a modern, eye-friendly dark interface</p>
+
+        </div>
+
+        <div class="cardo">
+            <div class="icon-box">
+            <i class="fa-solid fa-bullseye"></i> 
+            </div>
+            <h3 class="cardos-t">Goal-Oriented</h3>
+            <p class="cardos-p">Every feature is built to keep your goals clear and your progress moving forward</p>
+
+        </div>
+    </section>
+    <section class="quote-section">
+        <div id="step">
+            <h2 class="quote-title">&ldquo;A journey of a thousand </h2>
+            <h2 class="quote-title2">miles begins with</h2>
+            <h2 class="quote-title3">a single step&rdquo;</h2>
+            <button class="quote-button" onclick="window.location.href='/jour';">Take The First Step</button>
+        </div>
+    </section>
+</main>
+{% endblock %}
+
+

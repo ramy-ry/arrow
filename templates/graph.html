@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">  <title>Arrow</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar" >
+        <a href="/">
+      <img class="arrow-image" src="{{ url_for('static', filename='rrr.svg') }}" alt="arrow" >
+      </a>
+
+      {% if session.get("user_id") %} 
+
+      <button class="logout-btn"  onclick="window.location.href='/logout';" >log out</button>
+
+      {% else %}
+      
+      <button class="login-btn"  onclick="window.location.href='/login';" >log in</button>
+      <button class="sign-btn"  onclick="window.location.href='/signup';">sign up</button>
+
+      {% endif %}
+      <div>
+        <div class="buttons-container">
+          <button class="tododo-btn"  onclick="window.location.href='/todo';">TO-DO List</button>
+          <button class="time-btn"  onclick="window.location.href='/time';"> Progress Tracker</button>
+          <button class="graph-btn-active"  onclick="window.location.href='/graph';">Progress Dashboard</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="line"></div>
+  <main>
+
+    <h2 class="pro-title">PROGRESS GRAPHS</h2>
+    <p class="pro-p">The graphs represent your growth visually ,It will be automatically<br>
+         updated when you add new data in the "Progress Tracker"</p>
+
+    <div class="charts">
+    <div class="chart-container">
+    <canvas id="hoursChart"></canvas>
+</div>
+
+<div class="chart-container">
+    <canvas id="satisfactionChart"></canvas>
+</div>
+</div>
+
+  </main>
+  <script>
+    const progressData = {{ data | tojson | safe }};
+</script>
+
+  <script src="{{ url_for('static', filename='graph.js') }}"></script>
+
+</body>
+</html>
