@@ -39,9 +39,9 @@ const ctx1 = document
 
 const gradient1 = ctx1.createLinearGradient(0, 0, 0, 400);
 
-gradient1.addColorStop(0, "rgba(71,123,255,0.5)");
-gradient1.addColorStop(0.5, "rgba(71,123,255,0.15)");
-gradient1.addColorStop(1, "rgba(71,123,255,0)");
+gradient1.addColorStop(0, "rgba(255, 255, 255, 0.62)");
+gradient1.addColorStop(0.5, "rgba(205, 214, 235, 0.15)");
+gradient1.addColorStop(1, "rgba(181, 202, 255, 0)");
 
 
 new Chart(ctx1, {
@@ -58,7 +58,7 @@ new Chart(ctx1, {
 
             data: hours,
 
-            borderColor: "#477bff",
+            borderColor: "#ffffff",
 
             backgroundColor: gradient1,
 
@@ -72,7 +72,7 @@ new Chart(ctx1, {
 
             pointHoverRadius: 10,
 
-            pointBackgroundColor: "#477bff"
+            pointBackgroundColor: "#ffffff"
 
         }]
     },
@@ -112,7 +112,7 @@ new Chart(ctx2, {
 
             borderColor: "#ffffffea",
 
-            backgroundColor: "#74889ec9",
+            backgroundColor: "#8f8f8fc9",
 
             borderWidth: 2,
 
