@@ -991,20 +991,6 @@ background: rgba(86, 86, 86, 0.365);
   margin-left: 20px;
   color: #ffffff68;
 }
-.tip-box {
-  display: none;
-    font-family: "Google Sans", sans-serif;
-  padding: 2px 10px;
-  background-color: #ffffffcc;
-  border-radius: 15px;
-  border-left: 7px solid #1041bd;
-  width: 280px;
-  height: 65px;
-  color: #1041bd;
-  position: absolute;
-  top: 520px;
-  left: 910px;
-}
 .tip-p {
   font-family: "Google Sans", sans-serif;
 font-size: 16px;
