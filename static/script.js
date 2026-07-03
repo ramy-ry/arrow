@@ -1,4 +1,6 @@
 let currentDate ="";
+
+
 document.addEventListener('DOMContentLoaded', function () {
 
     const calendarEl = document.getElementById('calendar');
@@ -12,6 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
             center: 'title',
             right: ''
         },
+
+
+
+
+
 
         dateClick: function(info) {
 

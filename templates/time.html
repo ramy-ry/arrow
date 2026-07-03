@@ -54,7 +54,8 @@
 
 <!--hhhh-->
 <h2 class="time-title">Daily Activity Calendar</h2>
-<p class="time-de">Track your progress by clicking today's date(<span class="blue-square">the blue square</span>) and submit your data .</p>
+<p class="time-de">Track your progress by clicking today's date
+  (<span class="blue-square">the white square</span>) and submit your data .</p>
 <p class="time-de2">Don't woory if you you miss a day ... you can always add your progress later </p>
 
  <div id="calendar"></div>
@@ -69,7 +70,8 @@
 
             <form action="/save-progress" method="POST">
 
-              <h4 class="hours-text">How many hours did you spend on your progress today? (studying, working, reading, etc.) </h4>
+              <h4 class="hours-text">How many hours did you spend on your progress today?
+                 (studying, working, reading, etc.) </h4>
               <input type="hidden" id="date-input" name="date">
               <input type="number" autocomplete="off" autofocus class="hours" min="0" max="23.9" step="0.25" name="hours">
               <h4 class="satisfy-text">How was your day ? (On a scale of 0 to 10)</h4>

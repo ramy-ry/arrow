@@ -4,7 +4,8 @@ const hours = progressData.map(item => item.hours);
 const satisfaction = progressData.map(item => item.satisfaction);
 
 
-// =================== Neon Plugin ===================
+//Neon Plugiin
+
 
 const neonEffect = {
 
@@ -31,6 +32,8 @@ const neonEffect = {
 
 
 
+//the first
+
 
 const ctx1 = document
     .getElementById("hoursChart")
@@ -42,6 +45,8 @@ const gradient1 = ctx1.createLinearGradient(0, 0, 0, 400);
 gradient1.addColorStop(0, "rgba(255, 255, 255, 0.62)");
 gradient1.addColorStop(0.5, "rgba(205, 214, 235, 0.15)");
 gradient1.addColorStop(1, "rgba(181, 202, 255, 0)");
+
+
 
 
 new Chart(ctx1, {
@@ -83,6 +88,10 @@ new Chart(ctx1, {
 
 
 
+//the second 
+
+
+
 
 const ctx2 = document
     .getElementById("satisfactionChart")
@@ -94,6 +103,8 @@ const gradient2 = ctx2.createLinearGradient(0, 0, 0, 400);
 gradient2.addColorStop(0, "rgba(255,255,255,0.4)");
 gradient2.addColorStop(0.5, "rgba(255,255,255,0.1)");
 gradient2.addColorStop(1, "rgba(255,255,255,0)");
+
+
 
 
 new Chart(ctx2, {
