@@ -727,18 +727,15 @@ font-size: 16px;
    left: 50px;
 }
 .to-title {
-     font-family: "Google Sans", sans-serif;
-     font-size: 49px;
-  background-image: linear-gradient(43deg, rgba(255, 255, 255, 0.404) , rgb(255, 255, 255));
-  -webkit-background-clip: text;
-   color: transparent;
+   font-family: "Google Sans", sans-serif;
+   font-size: 49px;
+   color: gainsboro;
      position: absolute;
      top:110px;
      left: 50px;
 }
 .pro-p {
       font-family: "Google Sans", sans-serif;
-
   color: #ffffff5d;
   position: absolute;
   top: 170px;
@@ -749,10 +746,8 @@ font-size: 16px;
     margin: 100px auto;
     padding: 30px;
     text-align: center;
-    background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(10px);
+    background: rgba(59, 59, 59, 0.938);
     border-radius: 20px;
-    border: 1px solid rgba(255,255,255,0.1);
 }
 .error-card h1 {
     color: #ffffff;
