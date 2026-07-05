@@ -310,7 +310,7 @@ html {  scroll-behavior: smooth;}
 .todo-input {
   border: none;
   background-color: #ffffff;
-  color: white;
+  color: rgb(0, 0, 0);
   width: 300px;
   height: 35px;
   font-family: "Google Sans", sans-serif;
