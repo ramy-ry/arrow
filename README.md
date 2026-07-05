@@ -16,7 +16,7 @@ This feature is to help users maintain a consistent record of their daily activi
 ### PROGRESS DASHBOARD : 
 This page converts the Daily Progress Tracker’s entries into visual charts (line charts and bar charts), ...making the data easier to understand and analyze at a glance, and stay motivated throughout their  journey... 
               
-         And of course, all these tools are completely private thanks to the login system, which ensures that each user can access and manage only their own data. and no user can access or see another user’s data.
+ - And of course, all these tools are completely private thanks to the login system, which ensures that each user can access and manage only their own data. and no user can access or see another user’s data.
 
 ## Technologies sed :
 - Python
@@ -40,7 +40,7 @@ I wrote 8 HTML files, all of them are located in a folder called “templates”
 5. “apology.html” : I create with it the apology page that will appear to the user in case of an error (e.g: write a wrong password in the log-in processing ) with a text that will tell the user what they did wrong (e.g: Incorrect password! )
 6. “todo.html”: I create with it the page of the first feature(the to-do list)
 7. “time.html”: I create with it the page of the second feauture(the daily progress tracker)
-8. “graph.html”:I create with it the se third feauture (the progress dashboard)
+8. “graph.html”:I create with it the third feauture (the progress dashboard)
                   In "todo.html", "time.html", and "graph.html", I extended the navigation bar by adding three buttons that allow users to navigate easily between the different features of the website.
 ### Static folder :
 In the static folder I wrote the “styles.css” file and two JavaScript files, and also the images that I use(the logo, the to-do circle…etc) 
